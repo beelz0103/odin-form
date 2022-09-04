@@ -1,0 +1,220 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh;
+}
+
+@font-face {
+    font-family: logo-font;
+    src: url(assets/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    font-family: Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    flex-wrap: wrap;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height: 100vh;
+}
+
+.backgroundimage {
+    height: 100vh;
+    width: auto;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.caption {   
+    display: flex; 
+    position: absolute;
+    background-color: rgb(0,0,0,0.6);    
+    width: 100%;
+    top: 20vh;  
+    padding:15px 0;  
+    align-items: center;
+    justify-content: center;
+}
+
+.odinlogo {
+    top:0; 
+    height:16vh;
+}
+
+.backgroundtext {
+    font-size: 6rem;
+    color: white;
+    font-family: logo-font, sans-serif;
+}
+
+.middle {
+    height: fit-content;
+    background-color: white;
+    margin: 40px 50px;
+    margin-top: 20px;
+}
+
+.top {
+    background-color: hsl(210deg 20% 98%);
+    flex:1;        
+}
+
+.top div {
+    color: black;
+}
+
+.top div:nth-child(1) {
+    margin: 40px 0 25px 50px;
+}
+
+.top div:nth-child(2) {
+    margin: 25px 0 40px 50px;    
+}
+
+.bottom {
+    background-color: hsl(210deg 20% 98%);
+    flex:1;
+}
+
+input, textarea, select, button {
+    border-radius: 3px;
+    width : 300px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;  
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap:0 75px;
+}
+
+.first_name, .last_name, .email, .phone_number, .password, .confirm_password {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 1px;
+    border-radius: 3px;
+    padding: 4px;
+    padding-left: 10px;
+    height: 32px;
+}
+
+.first_name label {
+    margin-bottom: 2px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+
+#main_form {
+    display: flex;
+}
+
+#main_form div {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#main_form {
+    width: fit-content;
+}
+
+#main_form .password {
+    margin-bottom: 20px;
+}
+
+.ldt {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:gray;
+    margin-bottom: 20px;
+}
+
+button {
+    height:50px;
+    width:250px;
+    border-radius: 10px;
+    background-color: #596D48;
+    color: white;
+    font-size: 20px;
+    margin: 30px 50px;
+    font-weight: bold;
+    border-width: 1px;
+}
+
+.bottomtext {
+    margin-left: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.login {
+    color:#596D48;
+    font-weight: bold;
+}
+
+.middle {
+    margin-bottom: 20px;
+}
+
+.formcontainer {
+    width: 100%;
+}
+
+a:hover {
+    font-size: 101%;
+}
+
+
+
+input:focus-visible {
+    outline: none;
+  }
+    
+  /* Focusing the button with a mouse, touch, or stylus will show a subtle drop shadow. */
+
+
+input {
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+input {
+    border: 2px solid lightgray;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 1px 1px 5px rgba(1, 1, 0, .7);
+}
+
+input:-webkit-autofill { 
+    -webkit-background-clip: text;
+}
+
+.error {
+    border-color: red;
+}
+
+.error:focus {
+    border-color: red;
+}
+
+.correr {
+    border-color: green;
+}
